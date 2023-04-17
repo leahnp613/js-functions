@@ -25,7 +25,10 @@ Exercise 2:
   - Define a function as a function expression, `maxOfThree`, that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
 */
 
-function maxOfThree(...args) {}
+function maxOfThree(...args) {
+  args = args.sort((a, b) => a - b);
+  return args.at(-1);
+}
 
 console.log("Exercise 2 Result:\n", maxOfThree(3, 9, 16));
 
@@ -33,6 +36,10 @@ console.log("Exercise 2 Result:\n", maxOfThree(3, 9, 16));
 Exercise 3: 
   - Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
 */
+const vowels = ["a", "e", "i", "o", "u"];
+function isCharAVowel(char1) {
+  return vowels.includes(char1.toLowerCase());
+}
 
 console.log(
   `Exercise 3 Result:
@@ -53,7 +60,9 @@ console.log(
 Exercise 4: 
   - Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
 */
-
+function sumArray(array) {
+  return array.reduce((previous, current) => previous + current, 0);
+}
 console.log("Exercise 4 Result:\n", sumArray([2, 5, 15, 20]));
 
 /* 
