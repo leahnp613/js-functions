@@ -69,6 +69,9 @@ console.log("Exercise 4 Result:\n", sumArray([2, 5, 15, 20]));
 Exercise 5:
   - Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product of those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
 */
+function multiplyArray(arrayNum) {
+  return arrayNum.reduce((previous, current) => previous * current, 1);
+}
 
 console.log("Exercise 5 Result:\n", multiplyArray([2, 6, 12]));
 
