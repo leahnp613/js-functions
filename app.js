@@ -79,7 +79,9 @@ console.log("Exercise 5 Result:\n", multiplyArray([2, 6, 12]));
 Exercise 6:
   - Define a function, as a function expression, `numArgs` that returns the number of arguments passed to the function when called.
 */
-
+function numArgs(arrayArgs) {
+  return arrayArgs.length;
+}
 console.log(
   `Exercise 6 Result: 
  ${numArgs("Hello.", "I", "would", "like", "one", "taco", "plz.")}
@@ -93,13 +95,18 @@ console.log(
 Exercise 7:
   - Define a function, as a function declaration, `reverseString` that takes a string, reverses the characters, and returns it. For example, `reverseString('rockstar');` would return the string "ratskcor".
 */
-
+function reverseString(string1) {
+  return string1.split("").reverse().join("");
+}
 console.log("Exercise 7 Result:\n", reverseString("!stratpoP taeh ton oD"));
 
 /* 
 Exercise 8:
   - Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the longest string's length.
 */
+function longestStringInArray(arrayStrings) {
+  return;
+}
 
 console.log(
   "Exercise 8 (with O(N)?) Result:\n",
